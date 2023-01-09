@@ -89,7 +89,7 @@ int faiss_index_cpu_to_gpu_multiple(
 int faiss_index_cpu_to_gpu_multiple_with_options(
         FaissGpuResourcesProvider** providers_vec,
         size_t providers_vec_size,
-        int* devices,
+        const int* devices,
         size_t devices_size,
         const FaissIndex* index,
         const FaissGpuMultipleClonerOptions* options,
